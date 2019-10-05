@@ -1,0 +1,170 @@
+body {
+	background-color: rgba(130,211,110,0.2);
+	margin: 0;
+	font-family:  Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+	min-height: 100%;
+	min-width: 400px; 交互式后从400px开始变为横向
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100%;
+}
+
+
+/*======================================================*/
+/*header:*/
+
+.header {
+	width: 100%;
+	height: 45px;
+	background-color: rgba(10,10,10,0.7);
+}
+
+.header p {
+	color: rgba(255,255,255,0.8);
+	padding: 17px 10px;
+	white-space: nowrap;
+	float: left;
+}
+
+.header a {
+	color: rgba(255,255,255,0.8);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.header a:hover {
+	color: white;
+	text-shadow: 0 0 5px white;
+}
+
+/*------------------------------------------------------*/
+/*main:*/
+.main {
+	width: 40%;
+	border-right: 1px solid rgba(250,250,250,0.7); 
+	border-left: 1px solid rgba(250,250,250,0.7);
+	position: relative;
+	min-width: 400px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.6);
+	box-shadow: 0 6px 16px white;
+	height: 900px;
+}
+
+/*表单：*/
+table {
+	width: 80%;
+	margin-left: 10%;
+}
+
+tr {
+	line-height: 2.2em;
+	font-size: 1.4em;
+}
+
+td {
+	display: block;
+}
+
+/*标题：*/
+#tableTitle {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 2.8em;
+}
+
+/*输入框：*/
+.inputer {
+	width: 100%; 
+	line-height: 2.5em;
+	border-radius: 5px; 
+	border: 1px lightblue solid; 
+	outline: none;
+	text-indent: 5px;
+}
+
+.inputer:focus {
+	box-shadow: 0 0 5px rgb(100,150,255);
+}
+
+/*验证码：*/
+#captchaInputer {
+	width: 50%;
+}
+
+#captchaPic {
+	position: relative;
+	top: -38px;
+	right: 12%;
+	height: 0;
+	float: right;
+	cursor: pointer;
+}
+
+#refreshButton {
+	height: 0;
+	position: relative;
+	top: -44px;
+	float: right;
+	cursor: pointer;
+}
+
+#refreshButton img {
+	height: 20px;
+	width: 20px;
+}
+
+
+/*按钮：*/
+.button {
+	margin-left: auto;
+	margin-right: auto;
+	height: 45px ! important;
+	min-width: 140px;
+	width: 45%;
+	font-size: 1.2em;
+	border-radius: 5px;
+	border: 2px solid lightblue;
+	outline: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	box-shadow: 0 0 7px #80ccff;
+}
+
+.button:active {
+	box-shadow: 0 0 7px #66c2ff;
+	border: 2px solid #66c2ff;
+}
+
+#submiter {
+	margin-top: 80px;
+	background-color: #99d6ff;
+	color: white;
+	text-shadow: 0 0 1px lightblue;
+	float: right;
+}
+
+#submiter:active {
+	background-color: #66c2ff;
+}
+
+#reseter {
+	float: left;
+	margin-top: 80px;
+	color: #787887;
+	background-color: rgba(0,0,0,0);
+}
+
+
+
