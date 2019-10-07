@@ -1,40 +1,27 @@
 import React from 'react';
-import SignUpButton from '../common/signUpButton';
-import SignInButton from '../common/signInButton';
 import MyTasksButton from '../common/myTasksButton';
 
 import LogoImg from '../../../img/logo.png';
-
+import ListStyle1 from '../../../img/listStyle1.png';
+import ListStyle2 from '../../../img/listStyle2.png';
 import './index.css';
 import '../../../css/index.css';
 
 
-
 class Home extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			loginAs: 1,
-		};
-	}
-
-	renderSignInOrMyTasks() {
-		if (this.state.loginAs == null) {
-			return (
-				<SignInButton className='signInHomeButton homeButtons'/>
-			);
+	getPath() {
+		const loginAs = 1;
+		if (loginAs === null) {
+			return "SignIn";
 		} else {
-			return (
-				<MyTasksButton className='myTasksHomeButton homeButtons'/>
-			);
+			return "MyTasks";
 		}
 	}
 
 	render() {
-		let signInOrMyTasks = this.renderSignInOrMyTasks();
 		return (
 			<div>
-				<div id="top">
+				<div id="homeTop">
 					<img id="logoImg" src={LogoImg} alt="logo"/>
 					<div id="welcome">
 						<div id="title">
@@ -45,12 +32,81 @@ class Home extends React.Component {
 							<span className="g"> Do</span>
 							<span className="b"> List</span>
 						</div>
-						<div id="buttons">
-							<SignUpButton className='signUpHomeButton homeButtons'/>
-							{signInOrMyTasks}
+						<div>
+							<MyTasksButton to={this.getPath()} className='myTasksHomeButton'/>
 						</div>
 					</div>
 				</div>
+				<table id="homeBottom">
+					<tbody>
+						<tr>
+							<td id="leftDescription">
+								<p className='descriptionL'>If these are you:</p>
+								<div id='leftDescriptionUl'>
+									<p>
+										<img src={ListStyle1} className='listStyle' alt='list style'/>
+										Always forget what to do
+									</p>
+									<p>
+										<img src={ListStyle1} className='listStyle' alt='list style'/>
+										Struggling with missing deadlines
+									</p>
+									<p>
+										<img src={ListStyle1} className='listStyle' alt='list style'/>
+										Want to coordinately manage tasks
+									</p>
+									<p>
+										<img src={ListStyle1} className='listStyle' alt='list style'/>
+										Hate untidy sticky notes everywhere
+									</p>
+									<p>
+										<img src={ListStyle1} className='listStyle' alt='list style'/>
+										Want a simple but powerful To Do List
+									</p>
+									<p>
+										<img src={ListStyle1} className='listStyle' alt='list style'/>
+										······
+									</p>
+								</div>
+								<p className='descriptionL'>This is made for you!</p>
+							</td>
+							<td id="rightDescription">
+								<p className='descriptionR'>
+									This is a simple To Do List, but we provide lots of useful functions to help you manage your tasks:
+								</p>
+								<div id='rightDescriptionUl'>
+									<p>
+										<img src={ListStyle2} className='listStyle' alt='list style'/>
+										Time filter, show what you want most
+									</p>
+									<p>
+										<img src={ListStyle2} className='listStyle' alt='list style'/>
+										Sequencer, put the important tasks in front
+									</p>
+									<p>
+										<img src={ListStyle2} className='listStyle' alt='list style'/>
+										Create your account, sync your tasks anywhere
+									</p>
+									<p>
+										<img src={ListStyle2} className='listStyle' alt='list style'/>
+										Set alarms, prevent missed deadlines
+									</p>
+									<p>
+										<img src={ListStyle2} className='listStyle' alt='list style'/>
+										Clear and simple interface, easy to use
+									</p>
+									<p>
+										<img src={ListStyle2} className='listStyle' alt='list style'/>
+										Try it to discover more...
+									</p>
+								</div>
+								<p className="descriptionR">
+									Try it to manage your tasks!
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 
 		);
