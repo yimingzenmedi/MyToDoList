@@ -4,18 +4,22 @@ import MyTasksButton from '../common/myTasksButton';
 import LogoImg from '../../../img/logo.png';
 import ListStyle1 from '../../../img/listStyle1.png';
 import ListStyle2 from '../../../img/listStyle2.png';
-import './index.css';
+import '../../../css/home.css';
 import '../../../css/index.css';
 
 
 class Home extends React.Component {
 	getPath() {
-		const loginAs = 1;
+		const loginAs = null;
 		if (loginAs === null) {
 			return "SignIn";
 		} else {
 			return "MyTasks";
 		}
+	}
+
+	componentWillMount() {
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	}
 
 	render() {

@@ -1,0 +1,31 @@
+.signUpButton {
+    background-color: #a6f29a;
+    border: 2px solid #a6f29a;
+    color: #fff;
+}
+
+.signUpButton:hover {
+    background-color: #acfaa0;
+    border: 2px solid #acfaa0;
+}
+
+.signUpButton:active {
+    background: #9ee794;
+    border: 2px solid #9ee794;
+}
+
+
+.signUpToSignIn, .signUpToSignUp {
+    border: 2px solid #a6f29a;
+    color: #a6f29a;
+}
+
+.signUpToSignIn:hover, .signUpToSignUp:hover {
+    color: #acfaa0;
+    border: 2px solid #acfaa0;
+}
+
+.signUpToSignIn:active, .signUpToSignUp:active {
+    color: #9ee794;
+    border: 2px solid #9ee794;
+}

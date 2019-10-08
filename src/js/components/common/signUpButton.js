@@ -8,8 +8,9 @@ class SignUpButton extends React.Component {
             <Link to='SignUp'
                   onlyActiveOnIndex={true}
                   className={this.props.className}
+                  id={this.props.id}
             >
-                Sign Up
+                {this.props.text}
             </Link>
         );
     }

@@ -1,6 +1,7 @@
 html {
     height: 100%;
     min-width: 1090px;
+    background-color: rgba(130, 211, 110, 0.15);
 }
 
 * {
@@ -15,10 +16,12 @@ body {
     height: 100%;
 }
 
-/*******************************************************/
-.b {
-    color: rgba(180,200,250,0.9);
+#root {
+    width: 100%;
+    height: 100%;
 }
+
+/*******************************************************/
 
 .r {
     color: rgba(240,130,130,0.9);
@@ -30,4 +33,130 @@ body {
 
 .g {
     color: rgba(180,250,180,0.9);
+}
+
+.b {
+    color: rgba(180,200,250,0.9);
+}
+
+/*******************************************************/
+
+#userInfo {
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 95%;
+    top: -10%;
+}
+
+.userImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/***********************************************************/
+.main {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 8px 16px white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+    left: 0;
+    right: 0;
+    top: 70px;
+    text-align: center;
+}
+.formTitle {
+    padding-top: 20px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.main form {
+    text-align: left;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    left: 0;
+    right: 0;
+}
+
+.infoLabel {
+    font-size: 1.8em;
+    line-height: 1.1em;
+    cursor: pointer;
+}
+
+.infoInput {
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 5px;
+}
+
+.infoLabel, .infoInput {
+    display: block;
+    width: 100%;
+}
+
+.infoInput:focus {
+    box-shadow: 0 0 5px #0063ff;
+    border: 1px lightblue solid;
+}
+
+.captchaInput {
+    width: 75%;
+}
+
+.captchaImg {
+    border: 1px solid black;
+    display: inline-block;
+    height: 2.2em;
+    width: 20%;
+    position: relative;
+    top: -78px;
+    float: right;
+    cursor: pointer;
+}
+
+.notice {
+    line-height: 1.2em;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+
+
+/**************************************************/
+.primaryButton {
+    width: 100%;
+    height: 49px;
+    font-size: 1.7em;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.secondaryLinkButton {
+    height: 45px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.7em;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(255,255,255,0.7);
+    margin-bottom: 15px;
 }

@@ -1,20 +1,25 @@
 import React from 'react';
 
+import '../../../css/header.css';
 
 class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            leftHtml: null,
-            rightHtml: null,
+            leftContent: this.props.leftContent,
+            rightContent: this.props.rightContent,
         }
     }
 
     render() {
         return (
-            <div>
-                <div className = "leftHtml">{this.state.leftHtml}</div>
-                <div className = "rightHtml">{this.state.rightHtml}</div>
+            <div className='header'>
+                <div className = "leftHtml">
+                    {this.state.leftContent}
+                </div>
+                <div className = "rightHtml">
+                    {this.state.rightContent}
+                </div>
             </div>
         );
     }

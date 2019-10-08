@@ -8,20 +8,19 @@ import SignIn from "./components/signIn";
 import SignUp from "./components/signUp";
 import MyTasks from "./components/myTasks";
 import IndexRoute from "react-router/es/IndexRoute";
+import ResetPassword from "./components/resetPassword";
+import "../css/index.css";
 
-let indexRoute = function() {
-	return Home;
-};
 
 ReactDOM.render(
 	(
 		<Router history={hashHistory}>
 			<Route path='/' component={App}>
-				<IndexRoute component={indexRoute()}/>
-				<Route path='Home' component={Home}/>
-				<Route path='SignIn' component={SignIn}/>
+				<IndexRoute component={Home}/>
 				<Route path='MyTasks' component={MyTasks}/>
+				<Route path='SignIn' component={SignIn}/>
 				<Route path='SignUp' component={SignUp}/>
+				<Route path='ResetPassword' component={ResetPassword}/>
 			</Route>
 		</Router>
 	),

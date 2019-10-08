@@ -2,15 +2,17 @@ import React from 'react';
 import ReturnHomeImg from '../../../img/returnHome.ico';
 import {Link} from "react-router";
 
-class ReturnHomeButton extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+import '../../../css/returnHomeButton.css';
 
+class ReturnHomeButton extends React.Component {
     render() {
         return (
-            <Link to='../home' onlyActiveOnIndex={true}>
-                <img src={ReturnHomeImg} alt="return home"/>
+            <Link
+                to='/'
+                onlyActiveOnIndex={true}
+                className={this.props.className}
+            >
+                <img className='returnHomeButton' src={ReturnHomeImg} alt="return home"/>
             </Link>
         );
     }

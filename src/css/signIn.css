@@ -1,0 +1,35 @@
+.signInButton {
+    background-color: #61daff;
+    border: 2px solid #61daff;
+    color: #fff;
+}
+
+.signInButton:hover {
+    background-color: #8ee9ff;
+    border: 2px solid #8ee9ff;
+}
+
+.signInButton:active {
+    background: #6bdfff;
+    border: 2px solid #6bdfff;
+}
+
+.signInToSignUp {
+    border: 2px solid #61daff;
+    color: #61daff;
+}
+
+.signInToSignUp:hover {
+    color: #82e9ff;
+    border: 2px solid #82e9ff;
+}
+
+.signInToSignUp:active {
+    color: #61daff;
+    border: 2px solid #61daff;
+}
+
+#resetPasswordLink {
+    float: right;
+    margin: 20px 0;
+}

@@ -8,8 +8,9 @@ class SignInButton extends React.Component {
             <Link to='SignIn'
                   onlyActiveOnIndex={true}
                   className={this.props.className}
+                  id={this.props.id}
             >
-                Sign In
+                {this.props.text}
             </Link>
         );
     }
