@@ -45,6 +45,7 @@
     "postcss-safe-parser": "4.0.1",
     "react": "^16.10.2",
     "react-app-polyfill": "^1.0.4",
+    "react-confirm-alert": "^2.4.1",
     "react-dev-utils": "^9.1.0",
     "react-dom": "^16.10.2",
     "react-router": "^3.2.4",
@@ -134,5 +135,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@material-ui/pickers": "^3.2.6"
   }
 }

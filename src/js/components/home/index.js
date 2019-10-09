@@ -10,7 +10,9 @@ import '../../../css/index.css';
 
 class Home extends React.Component {
 	getPath() {
-		const loginAs = null;
+
+		// TODO
+		const loginAs = "name";
 		if (loginAs === null) {
 			return "SignIn";
 		} else {
@@ -81,7 +83,7 @@ class Home extends React.Component {
 								<div id='rightDescriptionUl'>
 									<p>
 										<img src={ListStyle2} className='listStyle' alt='list style'/>
-										Time filter, show what you want most
+										Task filter, show what you want most
 									</p>
 									<p>
 										<img src={ListStyle2} className='listStyle' alt='list style'/>

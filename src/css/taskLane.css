@@ -1,0 +1,69 @@
+.taskLane {
+    float: left;
+    width: 23%;
+    margin-left: 1.5%;
+    min-height: 70px;
+    border-radius: 6px;
+    min-width: 93px;
+}
+.laneTitle {
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+/*tools:*/
+
+.hiddenTools {
+    height: 0;
+    width: 0;
+}
+
+.hiddenMenuButton {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 3px;
+    top: -25px;
+    padding: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.hiddenMenuButton:hover {
+    background: rgba(0,0,0, 0.2);
+}
+.hiddenMenuButton:active {
+    background: rgba(0,0,0, 0.4);
+}
+.menu {
+    background: rgba(255,255,255,0.9);
+    width: 320px;
+    padding: 5px 10px;
+    position: relative;
+    top: -10px;
+    border-radius: 3px;
+}
+.menu::after {
+    content: "";
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    left: 3px;
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent rgba(255,255,255,0.9);
+    border-width: 12px;
+}
+.subControllers {
+    padding-left: 10px;
+}
+.divider {
+    margin:15px 0;
+}
+
+.sortBySelector, .dueTimeStart, .dueTimeEnd {
+    width: 90%;
+}

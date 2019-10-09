@@ -5,8 +5,8 @@
 }
 
 .signUpButton:hover {
-    background-color: #acfaa0;
-    border: 2px solid #acfaa0;
+    background-color: #affda3;
+    border: 2px solid #affda3;
 }
 
 .signUpButton:active {
@@ -21,8 +21,8 @@
 }
 
 .signUpToSignIn:hover, .signUpToSignUp:hover {
-    color: #acfaa0;
-    border: 2px solid #acfaa0;
+    color: #affda3;
+    border: 2px solid #affda3;
 }
 
 .signUpToSignIn:active, .signUpToSignUp:active {

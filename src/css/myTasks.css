@@ -1,0 +1,258 @@
+.userInfo {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+}
+
+.userInfoImg {
+    cursor: pointer;
+    border: 2px solid #2b2b2b;
+}
+
+.userInfoImg:hover {
+    border: 2px solid #626262;
+}
+
+.userInfoImg:active {
+    box-shadow: 0 0 5px white;
+}
+
+.userInfoDetails {
+    width: 170px;
+    background: rgba(255, 141, 141, 0.2);
+    animation: userInfoDetailsBgColor 60s infinite;
+    position: relative;
+    right: 130px;
+    top: 15px;
+    border-radius: 5px;
+    padding: 7px;
+    color: #505050;
+    box-shadow: 0 0 3px #aeaeae;
+}
+.userInfoDetails::after {
+    content: "";
+    height: 0;
+    bottom: 100%;
+    left: 140px;
+    position: absolute;
+    width: 0;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 141, 141, 0.2);
+    animation: userInfoDetailsBorderColor 60s infinite;
+    border-image: initial;
+    border-width: 12px;
+}
+
+@keyframes userInfoDetailsBgColor {
+    0% {
+        background-color: rgb(255, 174, 172);
+    }
+    25% {
+        background-color: rgb(254, 255, 144);
+    }
+
+    50% {
+        background-color: rgb(184, 255, 184);
+    }
+
+    75% {
+        background-color: rgb(183, 205, 255);
+    }
+
+    100% {
+        background-color: rgb(255, 174, 172);
+    }
+}
+
+@keyframes userInfoDetailsBorderColor {
+    0% {
+        border-bottom-color: rgb(255, 174, 172);
+    }
+    25% {
+        border-bottom-color: rgb(254, 255, 145);
+    }
+
+    50% {
+        border-bottom-color: rgb(184, 255, 184);
+    }
+
+    75% {
+        border-bottom-color: rgb(183, 205, 255);
+    }
+
+    100% {
+        border-bottom-color: rgb(255, 174, 172);
+    }
+}
+
+
+.userInfoDetails hr {
+    height: 1px;
+    border-top: 1px solid rgba(169, 169, 169, 0.69);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.userInfoName {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.funcButton {
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 7px 0;
+    vertical-align: bottom;
+}
+.funcButton:hover {
+    text-decoration: underline;
+}
+
+.funcButtonImg {
+    display: inline-block;
+    height: 13px;
+    margin-right: 4px;
+}
+
+.react-confirm-alert-overlay {
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.react-confirm-alert {
+    width: 25%;
+}
+.userInfoConfirm {
+    border: 1px solid #2b2b2b;
+    border-radius: 7px;
+    position: relative;
+    top: -70px;
+    padding-bottom: 45px;
+    background-color: white;
+}
+.userInfoConfirm h2 {
+    background: #2b2b2b;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: white;
+    padding: 5px;
+    position: relative;
+    top: -1px;
+}
+.userInfoConfirm p {
+    width: 95%;
+    padding: 15px 5px;
+    min-height: 30px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-left: 2.5%;
+}
+.userInfoConfirm button {
+    width: 75px;
+    margin: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+/*********************************************************/
+
+/*main parts:*/
+
+#main {
+    margin-top: 70px;
+    height: 100%;
+}
+
+.todo {
+    background-color: rgba(240,130,130,0.9);
+    box-shadow: 3px 3px 3px rgba(200,50,50,0.6);
+}
+.todo .laneTitle {
+    text-shadow: 0 0 2px red;
+}
+
+.doing {
+    background-color: rgba(230,231,130,0.9);
+    box-shadow: 3px 3px 3px rgba(200,200,50,0.6);
+}
+.doing .laneTitle {
+    text-shadow: 0 0 2px rgb(185,185,0);
+}
+
+.done {
+    background-color: rgba(180,250,180,0.9);
+    box-shadow: 3px 3px 3px rgba(80,200,80,0.6);
+}
+.done .laneTitle {
+    text-shadow: 0 0 1px green;
+}
+
+.taskManager {
+    background-color: rgba(180,200,250,0.9);
+    box-shadow: 3px 3px 3px rgba(70,90,210,0.6);
+}
+.taskManager .laneTitle {
+    text-shadow: 0 0 1px blue;
+}
+
+#taskAdder {
+    margin: 2.5%;
+}
+.taskManager fieldset {
+    border: 1px solid #474747;
+    padding: 0 3px 3px 3px;
+    border-radius: 3px;
+}
+
+.titleInput {
+    height: 30px;
+}
+#titleInput {
+    padding: 5px 10px !important;
+    height: 25px;
+}
+
+.deadlineInput {
+    height: 30px;
+}
+#deadlineInput {
+    padding: 5px 10px !important;
+    height: 25px;
+}
+
+.adderButtons {
+    background-color: rgba(250,250,250,0.5);
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(70,90,210,0.6);
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+    height: 20px;
+}
+.adderButtons:hover {
+    box-shadow: 0 0 4px blue;
+}
+.adderButtons:active {
+    background-color: rgba(250,250,250,0.3);
+}
+
+#clearAllTasks {
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(250,250,250,0.5);
+    width: 93%;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(70,90,210,0.6);
+    margin: 8px 3.5%;
+    height: 20px;
+}
+#clearAllTasks:hover {
+    background-color: rgba(250,100,100,0.7);
+    box-shadow: 0 0 4px red;
+}
+#clearAllTasks:active {
+    background-color: rgba(250, 100, 100, 0.9);
+}
