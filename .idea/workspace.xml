@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7857edd0-5fb3-4ebf-b39e-f76ee7a4e751" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/myTasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/myTasks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/taskLane.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/taskLane.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/menubg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/taskLane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/taskLane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="todolist" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/myTasks.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5520">
+              <caret line="230" selection-start-line="230" selection-end-line="230" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="249" column="22" lean-forward="true" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#1191#2255#0" />
+                <element signature="n#!!block;n#render#0;n#TaskManager#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/taskLane.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-580">
+              <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="n#ToolsMenu#0" />
+                <element signature="e#4371#4663#0" />
+                <element signature="e#4892#5311#0" />
+                <element signature="n#!!block;n#render#0;n#Task#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/taskLane.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="144" column="16" lean-forward="true" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>index</find>
+      <find>entry</find>
+      <find>babel-lo</find>
+      <find>babel-loader</find>
+      <find>textInput</find>
+      <find>signInLabel</find>
+      <find>signIn</find>
+      <find>SignIn</find>
+      <find>ResetPassword</find>
+      <find>resetPassword</find>
+      <find>New</find>
+      <find>z-in</find>
+      <find>hiddenTools</find>
+      <find>doingTaskList</find>
+      <find>menuItemLabel</find>
+      <find>confir</find>
+      <find>addTaskToToDo</find>
+      <find>add</find>
+      <find>if (</find>
+      <find>||</find>
+      <find>all</find>
+      <find>clear</find>
+      <find>item</find>
+      <find>contentI</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>infoInput</replace>
+      <replace>infoLabel</replace>
+      <replace>resetPassword</replace>
+      <replace>ResetPassword</replace>
+      <replace>SignUp</replace>
+      <replace>signUp</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/home/index.js" />
+        <option value="$PROJECT_DIR$/config/paths.js" />
+        <option value="$PROJECT_DIR$/public/css/index.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/js/components/signUp/index.html" />
+        <option value="$PROJECT_DIR$/src/js/components/commonComponents.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/returnHome.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/index.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/userInfo.js" />
+        <option value="$PROJECT_DIR$/src/js/components/home/index.css" />
+        <option value="$PROJECT_DIR$/src/js/components/common/myTasksButton.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/header.css" />
+        <option value="$PROJECT_DIR$/src/js/components/common/returnHomeButton.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/returnHomeButton.css" />
+        <option value="$PROJECT_DIR$/src/js/components/common/header.js" />
+        <option value="$PROJECT_DIR$/src/css/returnHomeButton.css" />
+        <option value="$PROJECT_DIR$/src/js/components/common/signUpButton.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/signInButton.js" />
+        <option value="$PROJECT_DIR$/src/css/signIn.css" />
+        <option value="$PROJECT_DIR$/src/css/resetPassword.css" />
+        <option value="$PROJECT_DIR$/src/js/components/common/signUp.css" />
+        <option value="$PROJECT_DIR$/src/js/components/signIn/index.js" />
+        <option value="$PROJECT_DIR$/src/js/components/resetPassword/index.js" />
+        <option value="$PROJECT_DIR$/src/js/components/signUp/index.js" />
+        <option value="$PROJECT_DIR$/src/css/signUp.css" />
+        <option value="$PROJECT_DIR$/src/css/home.css" />
+        <option value="$PROJECT_DIR$/src/js/index.js" />
+        <option value="$PROJECT_DIR$/src/js/components/App.js" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/dialog.js" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/taskLine.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/taskLane.css" />
+        <option value="$PROJECT_DIR$/src/css/header.css" />
+        <option value="$PROJECT_DIR$/src/js/components/home/index.js" />
+        <option value="$PROJECT_DIR$/src/css/index.css" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/showConfirmAlert.js" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" />
+        <option value="$PROJECT_DIR$/src/css/myTasks.css" />
+        <option value="$PROJECT_DIR$/src/css/taskLane.css" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/taskLane.js" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1910" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="myTasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="resetPassword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="signIn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="signUp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/js/components/common" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Project\web\react\todolist\src\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Project\web\react\todolist\src\js\components\common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7857edd0-5fb3-4ebf-b39e-f76ee7a4e751" name="Default Changelist" comment="" />
+      <created>1570267803262</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570267803262</updated>
+      <workItem from="1570267806332" duration="24640000" />
+      <workItem from="1570344374727" duration="106682000" />
+      <workItem from="1570704877827" duration="8740000" />
+      <workItem from="1570771795092" duration="7879000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1570333363101</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570333363101</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homepage done">
+      <created>1570410093198</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570410093200</updated>
+    </task>
+    <task id="LOCAL-00003" summary="sign in, sign up, reset password">
+      <created>1570517987878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570517987878</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mytasks ui doing">
+      <created>1570620559036</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570620559036</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="147941000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1913" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230563" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Favorites" order="12" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="homepage done" />
+    <MESSAGE value="sign in, sign up, reset password" />
+    <MESSAGE value="mytasks ui doing" />
+    <option name="LAST_COMMIT_MESSAGE" value="mytasks ui doing" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/js/components/common/signUpButton.js</url>
+          <line>10</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/app.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/home/index.css" />
+    <entry file="file://$PROJECT_DIR$/src/components/home/index.js" />
+    <entry file="file://$PROJECT_DIR$/config/modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1392">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paths.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/signUp/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/js/components/header.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/components/commonComponents.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/returnHome.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/index.js" />
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/signUpButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/signInButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/resetPassword.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="180" column="29" lean-forward="true" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/signUp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/signIn.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/signUp/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/resetPassword/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="123" column="38" lean-forward="true" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18409" selection-start-line="18409" selection-end-line="18409" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/userInfo.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/returnHomeButton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/myTasksButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/returnHomeButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/dialog.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/signIn/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/showConfirmAlert.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/components/home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/userInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/myTasks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5520">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/taskLane.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="144" column="16" lean-forward="true" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/taskLane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-580">
+          <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#ToolsMenu#0" />
+            <element signature="e#4371#4663#0" />
+            <element signature="e#4892#5311#0" />
+            <element signature="n#!!block;n#render#0;n#Task#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="249" column="22" lean-forward="true" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#1191#2255#0" />
+            <element signature="n#!!block;n#render#0;n#TaskManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
