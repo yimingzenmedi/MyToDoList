@@ -61,7 +61,9 @@ class UserInfo extends React.Component {
                         <Button
                             onClick={() => {
                                 onClose();
-                                func();
+                                if(typeof func === "function") {
+                                    func();
+                                }
                             }}
                             className='confirmButton'
                             color="primary"

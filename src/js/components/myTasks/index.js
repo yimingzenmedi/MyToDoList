@@ -4,24 +4,33 @@ import UserInfo from "./userInfo";
 import ReturnHomeButton from "../common/returnHomeButton";
 import TaskLane from "./taskLane";
 import TextField from "@material-ui/core/TextField";
-
-import '../../../css/index.css';
-import '../../../css/myTasks.css';
 import {confirmAlert} from "react-confirm-alert";
 import Button from "@material-ui/core/Button";
 
+import '../../../css/index.css';
+import '../../../css/myTasks.css';
+
 class TaskManager extends React.Component {
-    handleAdd = () => {
-        if (this.props.addTask === undefined) {
-            return new Error("addTask should be a function")
-        }
-
-            let newTask = {};
-        this.props.addTask(newTask);
-    };
-
-    clearAllTasks = () => {
-        // TODO
+    showAlert = (title, content) => {
+        confirmAlert({
+            customUI: ({ onClose }) => {
+                return (
+                    <div className='userInfoConfirm'>
+                        <h2>{title}</h2>
+                        <p>{content}</p>
+                        <Button
+                            onClick={() => {
+                                onClose();
+                            }}
+                            className='confirmButton'
+                            color="primary"
+                        >
+                            OK
+                        </Button>
+                    </div>
+                );
+            }
+        });
     };
 
     showConfirmAlert = (title, content, func) => {
@@ -34,7 +43,9 @@ class TaskManager extends React.Component {
                         <Button
                             onClick={() => {
                                 onClose();
-                                func();
+                                if(typeof func === "function") {
+                                    func();
+                                }
                             }}
                             className='confirmButton'
                             color="primary"
@@ -54,6 +65,33 @@ class TaskManager extends React.Component {
         });
     };
 
+    handleAdd = () => {
+        if (typeof this.props.addTask !== 'function') {
+            throw new Error('props "addTask" is not a function!');
+        }
+
+        const title = document.getElementById("titleInput").value;
+        const deadline = document.getElementById("deadlineInput").value;
+        const content = document.getElementById("contentInput").value;
+        if (title === "" || deadline === "" || content === "") {
+            const title = "Error";
+            const content = "All the blanks should be filled.";
+            this.showAlert(title, content);
+        } else {
+            let newTask = {
+                title: title,
+                deadline: deadline,
+                content: content,
+            };
+            this.props.addTask(newTask);
+            document.getElementById("taskAdder").reset();
+        }
+    };
+
+    clearAllTasks = () => {
+        this.props.clearAllTasks();
+    };
+
     handleClearAll = () => {
         const title = "Caution";
         const content = "Are you sure you want to clear all tasks? This operation cannot be undone."
@@ -69,9 +107,10 @@ class TaskManager extends React.Component {
                         <legend>Add new task</legend>
                         <TextField
                             required
+                            ref="titleInput"
                             id="titleInput"
-                            label="Title"
                             className="titleInput"
+                            label="Title"
                             variant="outlined"
                             placeholder="Title"
                             style={{
@@ -84,10 +123,11 @@ class TaskManager extends React.Component {
                         />
                         <TextField
                             required
-                            type="datetime-local"
+                            type="date"
                             label="Deadline"
                             className="deadlineInput"
                             id="deadlineInput"
+                            ref="deadlineInput"
                             variant="outlined"
                             InputLabelProps={{
                                 shrink: true,
@@ -102,6 +142,7 @@ class TaskManager extends React.Component {
                             multiline
                             id="contentInput"
                             className="contentInput"
+                            ref="contentInput"
                             label="Content"
                             placeholder="Content"
                             variant="outlined"
@@ -137,73 +178,81 @@ class MyTasks extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            toDoTaskList: [
+                {
+                    title: "todo",
+                    deadline: '2019-10-13',
+                    content: "this is a demo"
+                }
+            ],
+            doingTaskList: [
+                {
+                    title: "doing",
+                    deadline: '2019-10-13',
+                    content: "this is a demo"
+                }
+            ],
+            doneTaskList: [{
+                title: "done",
+                deadline: '2019-10-13',
+                content: "this is a demo"
+            }],
+        }
+    }
+
+    clearAllTasks = () => {
+        this.setState(() => ({
             toDoTaskList: [],
             doingTaskList: [],
             doneTaskList: [],
-        }
-    }
+        }));
+    };
 
     addTaskToToDo = (task) => {
         let taskList = this.state.toDoTaskList;
         taskList.push(task);
-        this.setState({
+        this.setState(() => ({
             toDoTaskList: taskList
-        })
+        }));
     };
 
     addTaskToDoing = (task) => {
         let taskList = this.state.doingTaskList;
         taskList.push(task);
-        this.setState({
+        this.setState(() => ({
             doingTaskList: taskList
-        })
+        }));
     };
 
     addTaskToDone = (task) => {
         let taskList = this.state.doneTaskList;
         taskList.push(task);
-        this.setState({
+        this.setState(() => ({
             doneTaskList: taskList
-        })
+        }));
     };
 
-    deleteTaskFromToToDo = (task) => {
-        let taskList = this.state.toDoTaskList;
+    deleteTaskFrom = (task, listType) => {
+        let taskList;
+        if (listType === "todo") {
+            taskList = this.state.toDoTaskList;
+        } else if (listType === "doing") {
+            taskList = this.state.doingTaskList;
+        } else if (listType === "done") {
+            taskList = this.state.doneTaskList;
+        } else {
+            throw new Error("Error! Invalid listType! (Should be 'todo', 'doing' or 'done'");
+        }
         for(let i=0; i<taskList.length; i++) {
             if (taskList[i] === task) {
                 taskList.splice(i, 1);
+                console.log("delete");
                 break;
             }
         }
-        this.setState({
-            toDoTaskList: taskList
-        })
-    };
-
-    deleteTaskFromDoing = (task) => {
-        let taskList = this.state.doingTaskList;
-        for(let i=0; i<taskList.length; i++) {
-            if (taskList[i] === task) {
-                taskList.splice(i, 1);
-                break;
-            }
-        }
-        this.setState({
-            doingTaskList: taskList
-        })
-    };
-
-    deleteTaskFromDone = (task) => {
-        let taskList = this.state.doneTaskList;
-        for(let i=0; i<taskList.length; i++) {
-            if (taskList[i] === task) {
-                taskList.splice(i, 1);
-                break;
-            }
-        }
-        this.setState({
+        this.setState(() => ({
             doneTaskList: taskList
-        })
+        }));
     };
 
     render() {
@@ -214,10 +263,32 @@ class MyTasks extends React.Component {
                     rightContent={<UserInfo/>}
                 />
                 <div id="main">
-                    <TaskLane title='To Do' className='todo'/>
-                    <TaskLane title='Doing' className='doing'/>
-                    <TaskLane title='Done' className='done'/>
-                    <TaskManager/>
+                    <TaskLane
+                        title='To Do'
+                        className='todo'
+                        type='todo'
+                        taskList={this.state.toDoTaskList}
+                        addToNextStage={this.addTaskToDoing}
+                        deleteTask={this.deleteTaskFrom}
+                    />
+                    <TaskLane
+                        title='Doing'
+                        className='doing'
+                        type='doing'
+                        taskList={this.state.doingTaskList}
+                        addToNextStage={this.addTaskToDone}
+                        addToPreviousStage={this.addTaskToToDo}
+                        deleteTask={this.deleteTaskFrom}
+                    />
+                    <TaskLane
+                        title='Done'
+                        className='done'
+                        type='done'
+                        taskList={this.state.doneTaskList}
+                        addToPreviousStage={this.addTaskToDoing}
+                        deleteTask={this.deleteTaskFrom}
+                    />
+                    <TaskManager addTask={this.addTaskToToDo} clearAllTasks={this.clearAllTasks} />
                 </div>
             </div>
         );

@@ -222,6 +222,13 @@
     height: 25px;
 }
 
+#contentInput {
+    min-height: 100px !important;
+    max-height: 350px;
+    overflow: auto !important;
+    /*overflow-x: hidden !important;*/
+}
+
 .adderButtons {
     background-color: rgba(250,250,250,0.5);
     width: 100%;
