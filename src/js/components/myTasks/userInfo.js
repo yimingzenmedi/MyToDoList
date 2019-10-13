@@ -112,14 +112,6 @@ class UserInfo extends React.Component {
         this.showConfirmAlert(title, content, this.toSignOut);
     };
 
-    getScreenWidth = () => {
-        return document.body.clientWidth;
-    };
-
-    getScreenHeight = () => {
-        return document.body.clientHeight;
-    };
-
     stopBubble = (event) => {
         event.stopPropagation();
     };
@@ -141,8 +133,6 @@ class UserInfo extends React.Component {
                     id="userInfoDetailsWrap"
                     onClick={this.handleInfoClick}
                     style={{
-                        width: this.getScreenWidth()*2,
-                        height: this.getScreenHeight(),
                         display: this.state.display,
                     }}
                 >

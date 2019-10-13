@@ -10,6 +10,7 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
+import RingAudio from "../../../audio/ring.mp3";
 
 import "../../../css/alarm.css";
 
@@ -34,14 +35,6 @@ Date.prototype.format = function(fmt) {
     }
     return fmt;
 };
-
-function getScreenWidth() {
-    return document.body.clientWidth;
-}
-
-function getScreenHeight() {
-    return document.body.clientHeight;
-}
 
 function showAlert(title, content) {
     confirmAlert({
@@ -114,7 +107,7 @@ class AlarmAdder extends React.Component {
         const alertTitle = "Error";
         const alarmObj = {
             title: this.state.title,
-            date: this.state.dateOrigin.format("dd-MM-yyyy"),
+            date: this.state.dateOrigin.format("MM/dd/yyyy"),
             time: this.state.timeOrigin.format("hh:mm"),
             ring: this.state.ring,
         };
@@ -149,8 +142,6 @@ class AlarmAdder extends React.Component {
                 id="alarmAdderWrap"
                 style={{
                     display: this.state.display,
-                    width: getScreenWidth(),
-                    height: getScreenHeight()
                 }}
                 onClick={this.onClose}
             >
@@ -208,6 +199,7 @@ class AlarmAdder extends React.Component {
                                 id="newAlarmRingInput"
                                 className="newAlarmInput"
                                 margin='normal'
+                                component={"div"}
                             >
                                 <InputLabel shrink htmlFor="ring-label-placeholder" required>
                                     Ring for
@@ -227,10 +219,7 @@ class AlarmAdder extends React.Component {
                                         <em>Always</em>
                                     </MenuItem>
                                     <MenuItem value="10s">10s</MenuItem>
-                                    <MenuItem value="30s">30s</MenuItem>
-                                    <MenuItem value="1min">1min</MenuItem>
-                                    <MenuItem value="5min">5min</MenuItem>
-                                    <MenuItem value="10min">10min</MenuItem>
+                                    <MenuItem value="2min">2min</MenuItem>
                                     <MenuItem value="0">Do not ring</MenuItem>
                                 </Select>
                             </FormControl>
@@ -333,6 +322,24 @@ class AlarmElement extends React.Component {
     }
 }
 
+
+let isShine = true;
+
+// for Chrome and FireFox
+window.onfocus = function() {
+    isShine = false;
+};
+window.onblur = function() {
+    isShine = true;
+};
+
+// // for IE
+// document.onfocusin = function() {
+//     isShine = false;
+// };
+// document.onfocusout = function() {
+//     isShine = true;
+// };
 class Alarm extends React.Component {
     constructor(props) {
         super(props);
@@ -342,19 +349,103 @@ class Alarm extends React.Component {
             alarms: [
                 {
                     title: "test 1",
-                    date: '2017-05-24',
+                    date: '12/2/2019',
                     time: '09:30',
                     ring: '10s',
                 },
                 {
                     title: "test 2",
-                    date: '2017-05-24',
-                    time: '09:30',
+                    date: '11/04/2019',
+                    time: '09:12',
                     ring: "none",
                 }
             ],
         }
     }
+
+    playRing = () => {
+        const audio = document.getElementById("ringAudio");
+        audio.currentTime = 0;
+        audio.play();
+    };
+
+    stopRing = () => {
+        const audio = document.getElementById("ringAudio");
+        audio.pause();
+        audio.currentTime = 0;
+    };
+
+    alarm = (alarmObj) => {
+        let titleInit = document.title;
+        let lastTime;
+        if (alarmObj.ring === "always") {
+            lastTime = -1;
+        } else if (alarmObj.ring === "10s") {
+            lastTime = 10 * 1000;
+        } else if (alarmObj.ring === "2min") {
+            lastTime = 2 * 60 * 1000;
+        } else if (alarmObj.ring === "0") {
+            lastTime = 0;
+        }
+
+        this.playRing();
+        // take the place with a new dom:
+        // alert("Time up!\nTitle: " + alarmObj.title +"\nTime: " + alarmObj.date + " " + alarmObj.time);
+        let timer = setInterval(function () {
+            let title = document.title;
+            if (isShine === true) {
+                if (title === "Alarm clock up") {
+                    document.title = "Alarm clock up";
+                } else {
+                    document.title = "  ";
+                }
+                console.log("on")
+            } else {
+                document.title = titleInit;
+                console.log("off")
+            }
+
+            if(lastTime > -1) {
+                const targetTime = new Date(alarmObj.date + " " + alarmObj.time);
+
+                const finishTime = new Date(targetTime.getTime() + lastTime);
+                console.log(targetTime, finishTime);
+                if (finishTime <= new Date()) {
+                    console.log("finish ring");
+                    clearInterval(timer);
+                }
+            } else {
+
+            }
+
+        }, 500);
+
+    };
+
+    setAlarmTimer = () => {
+        setTimeout(() => {
+            let alarmList = this.state.alarms.slice();
+            for (let i = 0; i < alarmList.length; i++) {
+                const alarmObj = alarmList[i];
+                const targetTime = new Date(alarmObj.date + " " + alarmObj.time);
+                const currentTime = new Date();
+                const timeDiff = targetTime.getTime() - currentTime.getTime();
+                if (timeDiff < 0) {
+                    alarmList.splice(i, 1);
+                    this.setState({
+                        alarms: alarmList,
+                    });
+                    this.alarm(alarmObj);
+                    break;
+                }
+            }
+            return this.setAlarmTimer();
+        }, 1000);
+    };
+
+    componentDidMount = () => {
+        this.setAlarmTimer();
+    };
 
     setAlarms = (alarmsList) => {
         this.setState({
@@ -436,6 +527,7 @@ class Alarm extends React.Component {
     render() {
         return (
             <div className="alarmButtonFrame">
+                <audio src={RingAudio} id="ringAudio"/>
                 <img
                     src={AlarmImg}
                     alt="alarm button"
@@ -447,8 +539,6 @@ class Alarm extends React.Component {
                 <div id="alarmListWrap"
                      style={{
                          display: this.state.display,
-                         width: getScreenWidth(),
-                         height: getScreenHeight()
                      }}
                      onClick={this.handleAlarmButtonClick}
                 >

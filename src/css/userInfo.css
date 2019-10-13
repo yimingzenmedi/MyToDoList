@@ -3,7 +3,9 @@
     height: 0;
     position: absolute;
     top: 10px;
-    left: 95%;
+    left: auto;
+    right: 60px;
+    /*float: right;*/
 }
 
 .userInfoImg {
@@ -22,18 +24,21 @@
 
 
 #userInfoDetailsWrap {
-    position: relative;
-    left: -1441px;
-    top: -55px;
     z-index: 19;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .userInfoDetails {
     width: 170px;
     background: rgba(255, 141, 141, 0.2);
     animation: userInfoDetailsBgColor 60s infinite;
-    position: relative;
-    left: 1310px;
+    position: absolute;
+    left: auto;
+    right: 7px;
     top: 70px;
     border-radius: 5px;
     padding: 7px;
