@@ -8,36 +8,35 @@ import PreviousButton from "../../../img/previous.png";
 import DeleteButton from "../../../img/trashcan.png";
 
 import "../../../css/taskLane.css";
+import {confirmAlert} from "react-confirm-alert";
+import Button from "@material-ui/core/Button";
 
 class ToolsMenu extends React.Component {
     constructor(props) {
         super(props);
+        this.listType = this.props.listType;
         this.state = {
             showMenu: "none",
             sortBy: 0,
-            startTime: null,
-            endTime: null,
+            startTime: '',
+            endTime: '',
         }
-    }
+    };
 
     handleStartTimeChange = (event) => {
         let newStartTime = event.target.value;
-        if (newStartTime === "") {
-            newStartTime = null;
-        }
-        this.setState({
+        this.setState(() => ({
             startTime: newStartTime
-        })
+        }));
+        this.props.changeFilterTime(newStartTime, this.state.endTime);
     };
 
     handleEndTimeChange = (event) => {
         let newEndTime = event.target.value;
-        if (newEndTime === "") {
-            newEndTime = null;
-        }
-        this.setState({
+        this.setState(() => ({
             endTime: newEndTime
-        })
+        }));
+        this.props.changeFilterTime(this.state.startTime, newEndTime);
     };
 
     handleSortByChange = (event) => {
@@ -45,6 +44,7 @@ class ToolsMenu extends React.Component {
         this.setState({
             sortBy: newSortBy
         });
+        this.props.changeSortBy(newSortBy);
     };
 
     handleMenuButtonClick = () => {
@@ -59,10 +59,6 @@ class ToolsMenu extends React.Component {
             })
         }
     };
-
-    componentWillUpdate(nextProps, nextState, nextContext) {
-        // TODO
-    }
 
     render() {
         return (
@@ -114,7 +110,8 @@ class ToolsMenu extends React.Component {
                                 <MenuItem value={1}>Earliest Added</MenuItem>
                                 <MenuItem value={2}>Latest deadline</MenuItem>
                                 <MenuItem value={3}>Earliest deadline</MenuItem>
-                                <MenuItem value={4}>Name</MenuItem>
+                                <MenuItem value={4}>Title Z - A</MenuItem>
+                                <MenuItem value={5}>Title A - Z</MenuItem>
                             </Select>
                         </div>
                     </div>
@@ -131,6 +128,11 @@ class Task extends React.Component {
         this.type = this.props.type;
     }
 
+    componentWillReceiveProps = (nextProps) => {
+        this.obj = nextProps.obj;
+        this.type = nextProps.type;
+    };
+
     handleNextButtonClick = () => {
         this.props.moveToNextStage(this.obj);
     };
@@ -139,8 +141,39 @@ class Task extends React.Component {
         this.props.moveToPreviousStage(this.obj);
     };
 
+    showConfirmAlert = (title, content, func) => {
+    };
+
     handleDeleteButtonClick = () => {
-        this.props.deleteTask(this.obj);
+        const title = "Caution";
+        const content = "Are you sure you want to delete this task? This cannot be cancelled.";
+        confirmAlert({
+            customUI: ({ onClose }) => {
+                return (
+                    <div className='userInfoConfirm'>
+                        <h2>{title}</h2>
+                        <p>{content}</p>
+                        <Button
+                            onClick={() => {
+                                this.props.deleteTask(this.obj);
+                                onClose();
+                            }}
+                            className='confirmButton'
+                            color="primary"
+                        >
+                            Confirm
+                        </Button>
+                        <Button
+                            onClick={onClose}
+                            className="cancelButton"
+                            color="secondary"
+                        >
+                            Cancel
+                        </Button>
+                    </div>
+                );
+            }
+        });
     };
 
     replaceLineBreak = (text) => {
@@ -215,6 +248,9 @@ class TaskLane extends React.Component {
         this.type = this.props.type;
         this.state = {
             taskList: this.props.taskList,
+            sortBy: 5,
+            startTime: "",
+            endTime: "",
         };
     }
 
@@ -242,14 +278,87 @@ class TaskLane extends React.Component {
         this.props.deleteTask(task, this.type);
     };
 
+    changeSortBy = (newSortBy) => {
+        this.setState(() => ({
+            sortBy: newSortBy,
+        }));
+    };
+
+    sortList = (taskList, sortBy) => {
+        // let taskList = this.state.taskList;
+        let property;
+        if (sortBy <= 1) {
+            property = "added";
+        } else if (sortBy <=3) {
+            property = "deadline";
+        } else if (sortBy <= 5) {
+            property = "title";
+        } else {
+            // console.log(sortBy)
+            throw new Error("Error! Invalid value! (Should be from 0 to 5)");
+        }
+
+        let order = sortBy % 2;
+        let sortList = taskList.sort(function(obj1, obj2){
+            const value1 = obj1[property];
+            const value2 = obj2[property];
+            if (value1 < value2) {
+                return -1;
+            } else if (value1 > value2) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+        if (order === 0) {
+            sortList = sortList.reverse();
+        }
+        return sortList;
+    };
+
+    changeFilterTime = (newStartTime, newEndTime) => {
+        this.setState(() => ({
+            startTime: newStartTime,
+            endTime: newEndTime,
+        }));
+    };
+
+    filterList = (taskList, startTime, endTime) => {
+        let resultList = taskList.slice();
+        for(let i = 0; i < taskList.length; i++) {
+            const task = taskList[i];
+            if (startTime !== '' && task.deadline < startTime) {
+                resultList.splice(i, 1);
+            } else if (endTime !== '' && task.deadline > endTime) {
+                resultList.splice(i, 1);
+            }
+        }
+        return resultList;
+    };
+
     renderTasks = () => {
-        const taskList = this.state.taskList;
+        const sortBy = this.state.sortBy;
+        const startTime = this.state.startTime;
+        const endTime = this.state.endTime;
+        let taskList = this.state.taskList;
+        taskList = this.sortList(taskList, sortBy);
+        taskList = this.filterList(taskList, startTime, endTime);
+
+        if (taskList.length === 0) {
+            return (
+                <p className="nothingToShow">
+                    Nothing to show...
+                </p>
+            );
+        }
+
         let taskObjList = [];
         for (let i = 0; i < taskList.length; i++) {
             let taskObj = {
                 title: taskList[i].title,
                 deadline: taskList[i].deadline,
-                content: taskList[i].content
+                content: taskList[i].content,
+                added: taskList[i].added,
             };
 
             taskObjList.push(
@@ -267,14 +376,24 @@ class TaskLane extends React.Component {
     };
 
     render() {
-        const num = this.state.taskList.length;
+        const total = this.state.taskList.length;
+        const taskObjList = this.renderTasks();
+        let showing = taskObjList.length;
+        if (showing === undefined) {
+            showing = 0;
+        }
+
         return (
             <div className={this.props.className + ' taskLane'}>
                 <h2 className="laneTitle">{this.title}</h2>
-                <ToolsMenu/>
-                {this.renderTasks()}
+                <ToolsMenu
+                    listType={this.type}
+                    changeSortBy={this.changeSortBy}
+                    changeFilterTime={this.changeFilterTime}
+                />
+                {taskObjList}
                 <p className="taskCounter">
-                    { num === 0 ? "No task yet..." : num + " in total"}
+                    { total === 0 ? "No task yet..." : total + " in total, showing " + showing}
                 </p>
             </div>
         )

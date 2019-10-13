@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7857edd0-5fb3-4ebf-b39e-f76ee7a4e751" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/alarm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/userInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/components/myTasks/alarm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/myTasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/myTasks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/returnHomeButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/returnHomeButton.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/taskLane.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/taskLane.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/menubg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/common/returnHomeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/common/returnHomeButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/taskLane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/taskLane.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" afterDir="false" />
@@ -17,6 +22,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -26,49 +45,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/myTasks.css">
+        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5520">
-              <caret line="230" selection-start-line="230" selection-end-line="230" />
+            <state relative-caret-position="-480">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#1191#2255#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/alarm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="150" column="47" lean-forward="true" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#704#1458#0" />
+                <element signature="n#!!block;n#getScreenWidth#0" />
+                <element signature="e#1436#1486#0" />
+                <element signature="e#1505#2149#0" />
+                <element signature="e#1008#1015#0" />
+                <element signature="e#1059#1211#0" />
+                <element signature="e#1662#1806#0" />
+                <element signature="e#2193#2794#0" />
+                <element signature="e#288#304#0" />
+                <element signature="e#887#903#0" />
+                <element signature="e#9285#9952#0" />
+                <element signature="e#10211#10621#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
+        <entry file="file://$PROJECT_DIR$/src/css/alarm.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="249" column="22" lean-forward="true" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#1191#2255#0" />
-                <element signature="n#!!block;n#render#0;n#TaskManager#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/taskLane.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-580">
-              <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="n#ToolsMenu#0" />
-                <element signature="e#4371#4663#0" />
-                <element signature="e#4892#5311#0" />
-                <element signature="n#!!block;n#render#0;n#Task#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/taskLane.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="144" column="16" lean-forward="true" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+            <state relative-caret-position="303">
+              <caret line="138" column="28" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -86,30 +103,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>index</find>
-      <find>entry</find>
-      <find>babel-lo</find>
-      <find>babel-loader</find>
-      <find>textInput</find>
-      <find>signInLabel</find>
-      <find>signIn</find>
-      <find>SignIn</find>
-      <find>ResetPassword</find>
-      <find>resetPassword</find>
-      <find>New</find>
-      <find>z-in</find>
-      <find>hiddenTools</find>
-      <find>doingTaskList</find>
-      <find>menuItemLabel</find>
-      <find>confir</find>
-      <find>addTaskToToDo</find>
-      <find>add</find>
-      <find>if (</find>
       <find>||</find>
       <find>all</find>
       <find>clear</find>
       <find>item</find>
       <find>contentI</find>
+      <find>moveToNextStage</find>
+      <find>sortList</find>
+      <find>splice</find>
+      <find>taskList: nextProps.taskList,</find>
+      <find>taskList: nextProps.taskList,</find>
+      <find>cons</find>
+      <find>toDo</find>
+      <find>toDoTaskList:</find>
+      <find>taskList</find>
+      <find>console</find>
+      <find>showing</find>
+      <find>delete</find>
+      <find>`</find>
+      <find>Alert</find>
+      <find>spli</find>
+      <find>stop</find>
+      <find>visibility</find>
+      <find>de</find>
+      <find>userInfoDetails</find>
+      <find>userInfoImg</find>
+      <find>showAlert</find>
+      <find>add</find>
+      <find>alarmA</find>
+      <find>block</find>
+      <find>get</find>
     </findStrings>
     <replaceStrings>
       <replace>infoInput</replace>
@@ -138,10 +161,8 @@
         <option value="$PROJECT_DIR$/src/js/components/home/index.css" />
         <option value="$PROJECT_DIR$/src/js/components/common/myTasksButton.js" />
         <option value="$PROJECT_DIR$/src/js/components/common/header.css" />
-        <option value="$PROJECT_DIR$/src/js/components/common/returnHomeButton.js" />
         <option value="$PROJECT_DIR$/src/js/components/common/returnHomeButton.css" />
         <option value="$PROJECT_DIR$/src/js/components/common/header.js" />
-        <option value="$PROJECT_DIR$/src/css/returnHomeButton.css" />
         <option value="$PROJECT_DIR$/src/js/components/common/signUpButton.js" />
         <option value="$PROJECT_DIR$/src/js/components/common/signInButton.js" />
         <option value="$PROJECT_DIR$/src/css/signIn.css" />
@@ -159,13 +180,19 @@
         <option value="$PROJECT_DIR$/src/js/components/common/taskLane.css" />
         <option value="$PROJECT_DIR$/src/css/header.css" />
         <option value="$PROJECT_DIR$/src/js/components/home/index.js" />
-        <option value="$PROJECT_DIR$/src/css/index.css" />
         <option value="$PROJECT_DIR$/src/js/components/myTasks/showConfirmAlert.js" />
-        <option value="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" />
-        <option value="$PROJECT_DIR$/src/css/myTasks.css" />
         <option value="$PROJECT_DIR$/src/css/taskLane.css" />
         <option value="$PROJECT_DIR$/src/js/components/myTasks/taskLane.js" />
         <option value="$PROJECT_DIR$/src/js/components/myTasks/index.js" />
+        <option value="$PROJECT_DIR$/src/css/returnHomeButton.css" />
+        <option value="$PROJECT_DIR$/src/js/components/common/returnHomeButton.js" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/1.js" />
+        <option value="$PROJECT_DIR$/src/css/index.css" />
+        <option value="$PROJECT_DIR$/src/css/myTasks.css" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" />
+        <option value="$PROJECT_DIR$/src/css/userInfo.css" />
+        <option value="$PROJECT_DIR$/src/js/components/myTasks/alarm.js" />
+        <option value="$PROJECT_DIR$/src/css/alarm.css" />
       </list>
     </option>
   </component>
@@ -334,7 +361,7 @@
       <workItem from="1570267806332" duration="24640000" />
       <workItem from="1570344374727" duration="106682000" />
       <workItem from="1570704877827" duration="8740000" />
-      <workItem from="1570771795092" duration="7879000" />
+      <workItem from="1570771795092" duration="69056000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1570333363101</created>
@@ -364,11 +391,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570620559036</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="task functions">
+      <created>1570796319922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570796319922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147941000" />
+    <option name="totallyTimeSpent" value="209118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +433,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" visible="true" weight="0.37533513" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Favorites" order="12" weight="0.3297587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -421,7 +455,8 @@
     <MESSAGE value="homepage done" />
     <MESSAGE value="sign in, sign up, reset password" />
     <MESSAGE value="mytasks ui doing" />
-    <option name="LAST_COMMIT_MESSAGE" value="mytasks ui doing" />
+    <MESSAGE value="task functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="task functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -437,20 +472,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/app.js" />
     <entry file="file://$PROJECT_DIR$/src/index.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/home/index.css" />
     <entry file="file://$PROJECT_DIR$/src/components/home/index.js" />
-    <entry file="file://$PROJECT_DIR$/config/modules.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1392">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/paths.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -508,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="180" column="29" lean-forward="true" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/signUp.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -557,13 +573,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/common/userInfo.js" />
-    <entry file="file://$PROJECT_DIR$/src/css/returnHomeButton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/common/myTasksButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -581,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/common/returnHomeButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -596,13 +598,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/dialog.js" />
-    <entry file="file://$PROJECT_DIR$/src/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/signIn/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -648,53 +643,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/userInfo.js">
+    <entry file="file://$PROJECT_DIR$/src/css/taskLane.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+        <state relative-caret-position="330">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/returnHomeButton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/returnHomeButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="113" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/myTasks.css">
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5520">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        <state relative-caret-position="240">
+          <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#jian_ce_yuan_su_shi_fou_ke_jian#0" />
+            <element signature="n#!!block;n#show#0" />
+            <element signature="n#!!block;n#panduan_naoling#0" />
+            <element signature="n#!!block;n#panduan_zhengdian#0" />
+            <element signature="n#!!block;n#naobiao_bzsjcl#0" />
+            <element signature="n#!!block;n#naobiao_bzsj#0" />
+            <element signature="n#!!block;n#init#0" />
+            <element signature="n#!!block;n#naobiao_html_zdbs_function#0" />
+            <element signature="n#!!block;n#bo_fang_yin_pin#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/taskLane.css">
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="144" column="16" lean-forward="true" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+        <state relative-caret-position="273">
+          <caret line="180" column="29" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/pickers/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-360" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/taskLane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+        <state relative-caret-position="2408">
+          <caret line="173" column="18" lean-forward="true" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#ToolsMenu#0" />
-            <element signature="e#4371#4663#0" />
-            <element signature="e#4892#5311#0" />
+            <element signature="n#!!block;n#render#0;n#ToolsMenu#0" />
             <element signature="n#!!block;n#render#0;n#Task#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/myTasks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="249" column="22" lean-forward="true" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
+        <state relative-caret-position="-480">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#1191#2255#0" />
-            <element signature="n#!!block;n#render#0;n#TaskManager#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/userInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/userInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="143" column="54" selection-start-line="143" selection-start-column="54" selection-end-line="143" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/alarm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="150" column="47" lean-forward="true" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#704#1458#0" />
+            <element signature="n#!!block;n#getScreenWidth#0" />
+            <element signature="e#1436#1486#0" />
+            <element signature="e#1505#2149#0" />
+            <element signature="e#1008#1015#0" />
+            <element signature="e#1059#1211#0" />
+            <element signature="e#1662#1806#0" />
+            <element signature="e#2193#2794#0" />
+            <element signature="e#288#304#0" />
+            <element signature="e#887#903#0" />
+            <element signature="e#9285#9952#0" />
+            <element signature="e#10211#10621#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/alarm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="138" column="28" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
         </state>
       </provider>
     </entry>

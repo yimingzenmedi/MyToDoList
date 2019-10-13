@@ -4,8 +4,10 @@ import SignOutImg from "../../../img/signOut.ico";
 import ChangeAccountImg from "../../../img/changeAccount.ico";
 import ResetPasswordImg from "../../../img/resetPassword.ico";
 import { confirmAlert } from 'react-confirm-alert';
-import 'react-confirm-alert/src/react-confirm-alert.css';
 import Button from "@material-ui/core/Button";
+
+import 'react-confirm-alert/src/react-confirm-alert.css';
+import '../../../css/userInfo.css';
 
 class UserInfo extends React.Component {
     constructor(props) {
@@ -14,7 +16,7 @@ class UserInfo extends React.Component {
         this.bgColor = this.getRandomBGColor();
         this.state = {
             loginAs: "name",
-            visibility: "hidden",
+            display: "none",
         }
     }
 
@@ -30,7 +32,6 @@ class UserInfo extends React.Component {
             return 'rgb('+r+','+g+','+b+')';
         }
     };
-
 
     signOut = () => {
         console.log("sign out")
@@ -84,12 +85,12 @@ class UserInfo extends React.Component {
     };
 
     handleInfoClick = () => {
-        let newVisibility = "hidden";
-        if (this.state.visibility === "hidden") {
-            newVisibility = 'visible';
+        let newDisplay = "none";
+        if (this.state.display === "none") {
+            newDisplay = 'block';
         }
         this.setState({
-            visibility: newVisibility,
+            display: newDisplay,
         });
     };
 
@@ -111,6 +112,18 @@ class UserInfo extends React.Component {
         this.showConfirmAlert(title, content, this.toSignOut);
     };
 
+    getScreenWidth = () => {
+        return document.body.clientWidth;
+    };
+
+    getScreenHeight = () => {
+        return document.body.clientHeight;
+    };
+
+    stopBubble = (event) => {
+        event.stopPropagation();
+    };
+
     render() {
         let initLetter = this.state.loginAs[0];
         const bgColor = this.bgColor;
@@ -124,26 +137,39 @@ class UserInfo extends React.Component {
                 >
                     {initLetter}
                 </Avatar>
-                <div className="userInfoDetails" style={{visibility: this.state.visibility}}>
-                    <p>Sign in as:</p>
-                    <p className="userInfoName">{this.state.loginAs}</p>
-                    <hr/>
-                    <p className="funcButton" onClick={this.handleResetPasswordClick}>
-                        <img src={ResetPasswordImg} alt="reset password" className="funcButtonImg"/>
-                        Reset password
-                    </p>
+                <div
+                    id="userInfoDetailsWrap"
+                    onClick={this.handleInfoClick}
+                    style={{
+                        width: this.getScreenWidth()*2,
+                        height: this.getScreenHeight(),
+                        display: this.state.display,
+                    }}
+                >
+                    <div
+                        className="userInfoDetails"
+                        onClick={this.stopBubble}
+                        style={{display: this.state.display}}
+                    >
+                        <p>Sign in as:</p>
+                        <p className="userInfoName">{this.state.loginAs}</p>
+                        <hr/>
+                        <p className="funcButton" onClick={this.handleResetPasswordClick}>
+                            <img src={ResetPasswordImg} alt="reset password" className="funcButtonImg"/>
+                            Reset password
+                        </p>
 
-                    <p className="funcButton" onClick={this.handleChangeAccountClick}>
-                        <img src={ChangeAccountImg} alt="change account" className="funcButtonImg"/>
-                        Change account
-                    </p>
+                        <p className="funcButton" onClick={this.handleChangeAccountClick}>
+                            <img src={ChangeAccountImg} alt="change account" className="funcButtonImg"/>
+                            Change account
+                        </p>
 
-                    <p className="funcButton" onClick={this.handleSignOutClick}>
-                        <img src={SignOutImg} alt="sign out" className="funcButtonImg"/>
-                        Sign out
-                    </p>
+                        <p className="funcButton" onClick={this.handleSignOutClick}>
+                            <img src={SignOutImg} alt="sign out" className="funcButtonImg"/>
+                            Sign out
+                        </p>
+                    </div>
                 </div>
-
             </div>
         )
     }

@@ -12,7 +12,7 @@ class ReturnHomeButton extends React.Component {
                 onlyActiveOnIndex={true}
                 className={this.props.className}
             >
-                <img className='returnHomeButton' src={ReturnHomeImg} alt="return home"/>
+                <img className='returnHomeButton' src={ReturnHomeImg} alt="return home" title="return to homepage"/>
             </Link>
         );
     }

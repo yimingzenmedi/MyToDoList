@@ -14,6 +14,15 @@
     color: white;
 }
 
+.nothingToShow {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.35);
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /******************************************************************/
 
 /*tools:*/

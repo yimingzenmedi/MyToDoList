@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "../common/header";
 import UserInfo from "./userInfo";
 import ReturnHomeButton from "../common/returnHomeButton";
+import Alarm from "./alarm";
 import TaskLane from "./taskLane";
 import TextField from "@material-ui/core/TextField";
 import {confirmAlert} from "react-confirm-alert";
@@ -9,6 +10,7 @@ import Button from "@material-ui/core/Button";
 
 import '../../../css/index.css';
 import '../../../css/myTasks.css';
+
 
 class TaskManager extends React.Component {
     showAlert = (title, content) => {
@@ -181,22 +183,27 @@ class MyTasks extends React.Component {
             toDoTaskList: [
                 {
                     title: "todo",
-                    deadline: '2019-10-13',
-                    content: "this is a demo"
+                    deadline: '2019-10-12',
+                    content: "this is a todo demo",
+                    added: 1470220608537
                 }
             ],
             doingTaskList: [
                 {
                     title: "doing",
                     deadline: '2019-10-13',
-                    content: "this is a demo"
+                    content: "this is a doing demo",
+                    added: 1470220608535
                 }
             ],
-            doneTaskList: [{
-                title: "done",
-                deadline: '2019-10-13',
-                content: "this is a demo"
-            }],
+            doneTaskList: [
+                {
+                    title: "done",
+                    deadline: '2019-10-14',
+                    content: "this is a done demo",
+                    added: 1470220608533,
+                }
+            ],
         }
     }
 
@@ -210,6 +217,7 @@ class MyTasks extends React.Component {
 
     addTaskToToDo = (task) => {
         let taskList = this.state.toDoTaskList;
+        task.added = new Date().getTime();
         taskList.push(task);
         this.setState(() => ({
             toDoTaskList: taskList
@@ -218,6 +226,7 @@ class MyTasks extends React.Component {
 
     addTaskToDoing = (task) => {
         let taskList = this.state.doingTaskList;
+        task.added = new Date().getTime();
         taskList.push(task);
         this.setState(() => ({
             doingTaskList: taskList
@@ -226,6 +235,7 @@ class MyTasks extends React.Component {
 
     addTaskToDone = (task) => {
         let taskList = this.state.doneTaskList;
+        task.added = new Date().getTime();
         taskList.push(task);
         this.setState(() => ({
             doneTaskList: taskList
@@ -243,23 +253,50 @@ class MyTasks extends React.Component {
         } else {
             throw new Error("Error! Invalid listType! (Should be 'todo', 'doing' or 'done'");
         }
+
         for(let i=0; i<taskList.length; i++) {
-            if (taskList[i] === task) {
+            const titleEqual = task.title === taskList[i].title
+                && task.title !== null;
+            const deadlineEqual = task.deadline === taskList[i].deadline
+                && task.deadline !== null;
+            const contentEqual = task.content === taskList[i].content
+                && task.content !== null;
+            const addedEqual = task.added === taskList[i].added
+                && task.added !== null;
+
+            if (titleEqual && deadlineEqual && contentEqual && addedEqual) {
                 taskList.splice(i, 1);
-                console.log("delete");
                 break;
             }
         }
-        this.setState(() => ({
-            doneTaskList: taskList
-        }));
+
+        if (listType === "todo") {
+            this.setState(() => ({
+                toDoTaskList: taskList
+            }));
+        } else if (listType === "doing") {
+            this.setState(() => ({
+                doingTaskList: taskList
+            }));
+        } else if (listType === "done") {
+            this.setState(() => ({
+                doneTaskList: taskList
+            }));
+        }
     };
 
     render() {
+        const leftContent = (
+            <div >
+                <ReturnHomeButton/>
+                <Alarm/>
+            </div>
+        );
+
         return (
             <div>
                 <Header
-                    leftContent={<ReturnHomeButton/>}
+                    leftContent={leftContent}
                     rightContent={<UserInfo/>}
                 />
                 <div id="main">
