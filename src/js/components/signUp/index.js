@@ -30,7 +30,7 @@ class SignUp extends React.Component {
         }
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 

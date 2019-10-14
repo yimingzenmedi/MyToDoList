@@ -128,7 +128,7 @@ class Task extends React.Component {
         this.type = this.props.type;
     }
 
-    componentWillReceiveProps = (nextProps) => {
+    UNSAFE_componentWillReceiveProps = (nextProps) => {
         this.obj = nextProps.obj;
         this.type = nextProps.type;
     };
@@ -254,7 +254,7 @@ class TaskLane extends React.Component {
         };
     }
 
-    componentWillReceiveProps = (nextProps) => {
+    UNSAFE_componentWillReceiveProps = (nextProps) => {
         this.setState(() => ({
             taskList: nextProps.taskList,
         }));
