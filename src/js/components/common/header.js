@@ -12,10 +12,11 @@ class Header extends React.Component {
     }
 
     render() {
+        const leftContent = this.state.leftContent;
         return (
             <div className='header'>
                 <div className = "leftHtml">
-                    {this.state.leftContent}
+                    {leftContent}
                 </div>
                 <div className = "rightHtml">
                     {this.state.rightContent}

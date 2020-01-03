@@ -4,10 +4,17 @@
     <list default="true" id="7857edd0-5fb3-4ebf-b39e-f76ee7a4e751" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/alarm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/alarm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/userInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/userInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/alarm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/alarm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/signUp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/common/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/common/header.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,34 +56,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
+            <state relative-caret-position="192">
               <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#1191#2255#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/alarm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8928">
+              <caret line="386" column="25" selection-start-line="386" selection-start-column="25" selection-end-line="386" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/alarm.js">
+        <entry file="file://$PROJECT_DIR$/src/js/components/common/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="201" column="47" selection-start-line="201" selection-start-column="47" selection-end-line="201" selection-end-column="47" />
+            <state relative-caret-position="380">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#704#1458#0" />
-                <element signature="e#1505#2149#0" />
-                <element signature="e#1008#1015#0" />
-                <element signature="e#1059#1211#0" />
-                <element signature="e#1662#1806#0" />
-                <element signature="e#2193#2794#0" />
-                <element signature="n#AlarmElement#0" />
-                <element signature="e#288#304#0" />
-                <element signature="e#887#903#0" />
-                <element signature="e#9285#9952#0" />
-                <element signature="e#10211#10621#0" />
               </folding>
             </state>
           </provider>
@@ -85,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/alarm.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="4920">
+              <caret line="205" column="17" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -104,16 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>`</find>
-      <find>Alert</find>
-      <find>spli</find>
-      <find>stop</find>
-      <find>visibility</find>
-      <find>de</find>
-      <find>userInfoDetails</find>
-      <find>userInfoImg</find>
-      <find>showAlert</find>
-      <find>add</find>
       <find>alarmA</find>
       <find>block</find>
       <find>get</find>
@@ -123,10 +120,8 @@
       <find>set</find>
       <find>MM</find>
       <find>console</find>
-      <find>10s</find>
       <find>alert</find>
       <find>router</find>
-      <find>alarm</find>
       <find>Img</find>
       <find>returnHomeButton</find>
       <find>adder</find>
@@ -134,6 +129,18 @@
       <find>Wr</find>
       <find>Wrap</find>
       <find>width</find>
+      <find>finish</find>
+      <find>10s</find>
+      <find>10</find>
+      <find>setI</find>
+      <find>select</find>
+      <find>Remember</find>
+      <find>`</find>
+      <find>Se</find>
+      <find>B</find>
+      <find>Button</find>
+      <find>alarm</find>
+      <find>alarm(</find>
     </findStrings>
     <replaceStrings>
       <replace>infoInput</replace>
@@ -142,6 +149,7 @@
       <replace>ResetPassword</replace>
       <replace>SignUp</replace>
       <replace>signUp</replace>
+      <replace>30s</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -163,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/js/components/common/myTasksButton.js" />
         <option value="$PROJECT_DIR$/src/js/components/common/header.css" />
         <option value="$PROJECT_DIR$/src/js/components/common/returnHomeButton.css" />
-        <option value="$PROJECT_DIR$/src/js/components/common/header.js" />
         <option value="$PROJECT_DIR$/src/js/components/common/signUpButton.js" />
         <option value="$PROJECT_DIR$/src/js/components/common/signInButton.js" />
         <option value="$PROJECT_DIR$/src/css/signIn.css" />
@@ -192,9 +199,10 @@
         <option value="$PROJECT_DIR$/src/js/components/myTasks/1.js" />
         <option value="$PROJECT_DIR$/src/js/components/myTasks/1.html" />
         <option value="$PROJECT_DIR$/src/css/userInfo.css" />
-        <option value="$PROJECT_DIR$/src/css/alarm.css" />
         <option value="$PROJECT_DIR$/src/js/components/myTasks/userInfo.js" />
+        <option value="$PROJECT_DIR$/src/css/alarm.css" />
         <option value="$PROJECT_DIR$/src/js/components/myTasks/alarm.js" />
+        <option value="$PROJECT_DIR$/src/js/components/common/header.js" />
       </list>
     </option>
   </component>
@@ -204,11 +212,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="508" />
-    <option name="y" value="55" />
-    <option name="width" value="980" />
-    <option name="height" value="1090" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -321,8 +328,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/js/components/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -334,6 +343,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -368,7 +378,8 @@
       <workItem from="1570267806332" duration="24640000" />
       <workItem from="1570344374727" duration="106682000" />
       <workItem from="1570704877827" duration="8740000" />
-      <workItem from="1570771795092" duration="91000000" />
+      <workItem from="1570771795092" duration="101527000" />
+      <workItem from="1578040125679" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1570333363101</created>
@@ -412,11 +423,25 @@
       <option name="project" value="LOCAL" />
       <updated>1570939915551</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="alarm ui ok">
+      <created>1571010409375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571010409375</updated>
+    </task>
+    <task id="LOCAL-00008" summary="alarm ok">
+      <created>1571020406950</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571020406950</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231062000" />
+    <option name="totallyTimeSpent" value="242211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,15 +453,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="762" y="0" width="781" height="864" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230563" />
+      <window_info id="Azure Explorer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38174275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" />
+      <window_info anchor="bottom" id="Cosmos Serverless Spark Jobs" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" />
+      <window_info anchor="bottom" id="Azure Activity Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
@@ -447,9 +477,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" visible="true" weight="0.37533513" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" visible="true" weight="0.27631578" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Favorites" order="12" weight="0.3297587" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -471,7 +503,9 @@
     <MESSAGE value="mytasks ui doing" />
     <MESSAGE value="task functions" />
     <MESSAGE value="alarm functions doing" />
-    <option name="LAST_COMMIT_MESSAGE" value="alarm functions doing" />
+    <MESSAGE value="alarm ui ok" />
+    <MESSAGE value="alarm ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="alarm ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -496,17 +530,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/font-awesome.min.css" />
     <entry file="file://$PROJECT_DIR$/public/css/index.css" />
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css" />
     <entry file="file://$PROJECT_DIR$/src/js/components/signUp/index.html" />
     <entry file="file://$PROJECT_DIR$/src/js/components/header.js" />
     <entry file="file://$PROJECT_DIR$/src/js/components/commonComponents.js" />
@@ -623,16 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/common/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -702,24 +718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1191#2255#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/1.js" />
     <entry file="file://$PROJECT_DIR$/config/modules.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
@@ -741,20 +740,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2352">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/myTasks.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/1.html" />
     <entry file="file://$PROJECT_DIR$/src/css/returnHomeButton.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -769,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/alarm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/userInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -786,23 +765,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/alarm.js">
+    <entry file="file://$PROJECT_DIR$/src/css/myTasks.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="201" column="47" selection-start-line="201" selection-start-column="47" selection-end-line="201" selection-end-column="47" />
+        <state relative-caret-position="168">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#704#1458#0" />
-            <element signature="e#1505#2149#0" />
-            <element signature="e#1008#1015#0" />
-            <element signature="e#1059#1211#0" />
-            <element signature="e#1662#1806#0" />
-            <element signature="e#2193#2794#0" />
-            <element signature="n#AlarmElement#0" />
-            <element signature="e#288#304#0" />
-            <element signature="e#887#903#0" />
-            <element signature="e#9285#9952#0" />
-            <element signature="e#10211#10621#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/myTasks/alarm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8928">
+          <caret line="386" column="25" selection-start-line="386" selection-start-column="25" selection-end-line="386" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/alarm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4920">
+          <caret line="205" column="17" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/common/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
