@@ -7,6 +7,7 @@ import TaskLane from "./taskLane";
 import TextField from "@material-ui/core/TextField";
 import {confirmAlert} from "react-confirm-alert";
 import Button from "@material-ui/core/Button";
+import store from '../../store';
 
 import '../../../css/index.css';
 import '../../../css/myTasks.css';
@@ -176,35 +177,39 @@ class TaskManager extends React.Component {
 
 }
 
+
+
 class MyTasks extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            toDoTaskList: [
-                {
-                    title: "todo",
-                    deadline: '2019-10-12',
-                    content: "this is a todo demo",
-                    added: 1470220608537
-                }
-            ],
-            doingTaskList: [
-                {
-                    title: "doing",
-                    deadline: '2019-10-13',
-                    content: "this is a doing demo",
-                    added: 1470220608535
-                }
-            ],
-            doneTaskList: [
-                {
-                    title: "done",
-                    deadline: '2019-10-14',
-                    content: "this is a done demo",
-                    added: 1470220608533,
-                }
-            ],
-        }
+        console.log(store.getState());
+        this.state = store.getState()
+        // this.state = {
+        //     toDoTaskList: [
+        //         // {
+        //         //     title: "todo",
+        //         //     deadline: '2019-10-12',
+        //         //     content: "this is a todo demo",
+        //         //     added: 1470220608537
+        //         // }
+        //     ],
+        //     doingTaskList: [
+        //         // {
+        //         //     title: "doing",
+        //         //     deadline: '2019-10-13',
+        //         //     content: "this is a doing demo",
+        //         //     added: 1470220608535
+        //         // }
+        //     ],
+        //     doneTaskList: [
+        //         // {
+        //         //     title: "done",
+        //         //     deadline: '2019-10-14',
+        //         //     content: "this is a done demo",
+        //         //     added: 1470220608533,
+        //         // }
+        //     ],
+        // }
     }
 
     clearAllTasks = () => {
